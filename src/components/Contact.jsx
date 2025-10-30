@@ -1,3 +1,5 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   LinkedInIcon,
   GitHubIcon,
@@ -7,22 +9,39 @@ import {
 } from "./SocialIcons";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const [formStatus, setFormStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setFormStatus("");
+
     const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
 
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    );
-    const mailtoLink = `mailto:abirchodha1@gmail.com?subject=${subject}&body=${body}`;
+    try {
+      // Send email using EmailJS
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        form,
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      );
 
-    // Open email client
-    window.location.href = mailtoLink;
+      setFormStatus("success");
+      form.reset();
+
+      // Clear success message after 5 seconds
+      setTimeout(() => setFormStatus(""), 5000);
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setFormStatus("error");
+
+      // Clear error message after 5 seconds
+      setTimeout(() => setFormStatus(""), 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -178,11 +197,28 @@ const Contact = () => {
               />
             </div>
 
+            {/* Status Messages */}
+            {formStatus === "success" && (
+              <div className="p-3 sm:p-4 rounded-xl bg-green-500/20 border border-green-500/50 text-green-400 text-sm sm:text-base text-center animate-fade-in">
+                ✓ Message sent successfully! I'll get back to you soon.
+              </div>
+            )}
+            {formStatus === "error" && (
+              <div className="p-3 sm:p-4 rounded-xl bg-red-500/20 border border-red-500/50 text-red-400 text-sm sm:text-base text-center animate-fade-in">
+                ✗ Failed to send message. Please try again or email me directly.
+              </div>
+            )}
+
             <button
               type="submit"
-              className="liquid-button w-full py-2.5 sm:py-3 rounded-2xl font-semibold transition-all duration-300 bg-gradient-to-r from-accent to-neon text-white text-sm sm:text-base hover:shadow-lg mt-auto"
+              disabled={isSubmitting}
+              className={`liquid-button w-full py-2.5 sm:py-3 rounded-2xl font-semibold transition-all duration-300 bg-gradient-to-r from-accent to-neon text-white text-sm sm:text-base hover:shadow-lg mt-auto ${
+                isSubmitting
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:scale-105"
+              }`}
             >
-              Send Message
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
