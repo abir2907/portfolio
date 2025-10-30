@@ -18,7 +18,7 @@ const Hero = () => (
     <div className="absolute inset-0 backdrop-blur-3xl bg-gradient-to-b from-transparent via-accent/5 to-transparent -z-10"></div>
 
     {/* Profile Image with floating animation */}
-    <div className="relative group animate-float">
+    <div className="relative group">
       <div className="absolute inset-0 bg-gradient-to-r from-accent to-neon rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-pulse-slow"></div>
       <img
         src="/formal-selfie.jpg"
@@ -28,7 +28,7 @@ const Hero = () => (
     </div>
 
     <div className="max-w-2xl text-center md:text-left space-y-4 sm:space-y-6">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-accent via-neon to-accent bg-clip-text text-transparent animate-fade-in-up leading-tight">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white animate-fade-in-up leading-tight">
         Abir Chodha
       </h1>
       <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-accent animate-fade-in-up animation-delay-200">

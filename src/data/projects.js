@@ -27,8 +27,7 @@ export const frontendProjects = [
     name: "Pig Game",
     github: "https://github.com/abir2907/pig-game",
     live: "https://pig-game-abir.netlify.app/",
-    description:
-      "A turn-based pig game app with fun game mechanics and UI.",
+    description: "A turn-based pig game app with fun game mechanics and UI.",
     tech: ["JavaScript", "HTML", "CSS"],
   },
   {
@@ -50,7 +49,7 @@ export const frontendProjects = [
   {
     name: "Bankist",
     github: "https://github.com/abir2907/bankist",
-    live: "https://bankist-site-abir.netlify.app/",
+    live: "https://bankist-abir.netlify.app/",
     description:
       "Simulated banking app with multi-user login, transactions, and visually pleasing UI.",
     tech: ["JavaScript", "HTML", "CSS"],
@@ -69,7 +68,7 @@ export const frontendProjects = [
     live: "https://travel-list-abir.netlify.app/",
     description:
       "Pack your travel items with this React mini-app! Responsive interface.",
-    tech: ["React", "CSS"]
+    tech: ["React", "CSS"],
   },
   {
     name: "Guess Game",
@@ -77,16 +76,15 @@ export const frontendProjects = [
     live: "https://guess-game-abir.netlify.app/",
     description:
       "A classic guess-my-number game in the browser. Simple, fast, and fun.",
-    tech: ["JavaScript"]
+    tech: ["JavaScript"],
   },
   {
     name: "Eat n Split",
     github: "https://github.com/abir2907/eat-n-split",
     live: "https://abir-eat-n-split.netlify.app/",
-    description:
-      "A basic bill splitting app built with React.",
-    tech: ["React", "CSS"]
-  }
+    description: "A basic bill splitting app built with React.",
+    tech: ["React", "CSS"],
+  },
 ];
 
 export const backendProjects = [
@@ -96,7 +94,7 @@ export const backendProjects = [
     live: "https://e-commerce-api-indol-pi.vercel.app/",
     description:
       "A robust API for e-commerce with authentication, product, and order management. Swagger API docs.",
-    tech: ["Node.js", "Express", "MongoDB"]
+    tech: ["Node.js", "Express", "MongoDB"],
   },
   {
     name: "Jobs API",
@@ -104,7 +102,7 @@ export const backendProjects = [
     live: "https://jobs-api-orpin.vercel.app/api-docs/",
     description:
       "API for a jobs platform: user CRUD, JWT, advanced filtering; deployed, with auto-generated OpenAPI docs.",
-    tech: ["Node.js", "Express", "MongoDB"]
+    tech: ["Node.js", "Express", "MongoDB"],
   },
   {
     name: "Store API",
@@ -112,16 +110,15 @@ export const backendProjects = [
     live: "https://store-api-sigma.vercel.app/",
     description:
       "API for managing categories/products/carts in a web store. Swagger OpenAPI included.",
-    tech: ["Node.js", "Express", "MongoDB"]
+    tech: ["Node.js", "Express", "MongoDB"],
   },
   {
     name: "Task Manager API",
     github: "https://github.com/abir2907/task-manager-api",
     live: "https://task-manager-abir.vercel.app/",
-    description:
-      "A simple async REST API to track tasks. Node.js/Express.",
-    tech: ["Node.js", "Express", "MongoDB"]
-  }
+    description: "A simple async REST API to track tasks. Node.js/Express.",
+    tech: ["Node.js", "Express", "MongoDB"],
+  },
 ];
 
 export const fullstackProjects = [
@@ -131,7 +128,7 @@ export const fullstackProjects = [
     live: "https://jobs-portal-abir-iota.vercel.app/",
     description:
       "A full-featured job search and recruiting platform. MERN stack, secure auth, modern UI.",
-    tech: ["MongoDB", "Express", "React", "Node"]
+    tech: ["MongoDB", "Express", "React", "Node"],
   },
   {
     name: "QuickAI",
@@ -139,7 +136,7 @@ export const fullstackProjects = [
     live: "https://quick-ai-client-beta.vercel.app/",
     description:
       "An AI-driven productivity and chat tool for professionals and teams.",
-    tech: ["MongoDB", "Express", "React", "Node", "OpenAI"]
+    tech: ["PostgreSQL", "Express", "React", "Node", "OpenAI"],
   },
   {
     name: "Snack Hub",
@@ -147,7 +144,7 @@ export const fullstackProjects = [
     live: "https://inventory-management-612.vercel.app/",
     description:
       "Inventory management SaaS, supports admin and user roles, stock operations, and modern dashboards.",
-    tech: ["MongoDB", "Express", "React", "Node"]
+    tech: ["MongoDB", "Express", "React", "Node"],
   },
   {
     name: "YC Directory",
@@ -155,6 +152,6 @@ export const fullstackProjects = [
     live: "https://yc-directory-abir.netlify.app/",
     description:
       "A visual directory for YCombinator companies, with interactive search and grid.",
-    tech: ["React", "CSS", "API"]
-  }
+    tech: ["React", "CSS", "API"],
+  },
 ];

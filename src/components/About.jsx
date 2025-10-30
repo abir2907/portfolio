@@ -29,7 +29,7 @@ const About = () => (
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-accent to-neon text-white font-semibold text-base sm:text-lg overflow-hidden transition-all duration-300 hover:shadow-lg transform hover:scale-105"
           >
-            <span className="relative z-10">Download Resume</span>
+            <span className="relative z-10">View Resume</span>
             <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">
               →
             </span>
