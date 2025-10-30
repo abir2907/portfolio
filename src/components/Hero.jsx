@@ -21,7 +21,7 @@ const Hero = () => (
     <div className="relative group animate-float">
       <div className="absolute inset-0 bg-gradient-to-r from-accent to-neon rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-pulse-slow"></div>
       <img
-        src="/src/assets/profile.jpg"
+        src="/formal-selfie.jpg"
         alt="Abir Chodha"
         className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-2xl object-cover border-4 border-accent/50 group-hover:border-neon transform transition-all duration-500 group-hover:scale-105 shadow-2xl"
       />
