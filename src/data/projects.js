@@ -135,7 +135,7 @@ export const fullstackProjects = [
     github: "https://github.com/abir2907/QuickAI",
     live: "https://quick-ai-client-beta.vercel.app/",
     description:
-      "An AI-driven productivity and chat tool for professionals and teams.",
+      "A generative AI SaaS platform. PERN stack, tiered subscriptions, and multiple AI content tools.",
     tech: ["PostgreSQL", "Express", "React", "Node", "OpenAI"],
   },
   {
