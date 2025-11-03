@@ -152,6 +152,6 @@ export const fullstackProjects = [
     live: "https://yc-directory-abir.netlify.app/",
     description:
       "A visual directory for YCombinator companies, with interactive search and grid.",
-    tech: ["React", "CSS", "API"],
+    tech: ["Next", "CSS", "API"],
   },
 ];
