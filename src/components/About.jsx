@@ -24,7 +24,7 @@ const About = () => (
         </p>
         <div className="text-center">
           <a
-            href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:7681d977-e39e-403e-9c23-a437512349ba"
+            href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:b9148660-08d0-437a-a13e-67beced2499b"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-accent to-neon text-white font-semibold text-base sm:text-lg overflow-hidden transition-all duration-300 hover:shadow-lg transform hover:scale-105"
