@@ -5,7 +5,7 @@ export const certifications = [
   },
   {
     name: "Microsoft Certified: Azure AI Fundamentals",
-    link: "https://www.credly.com/badges/9cf0cabe-25b9-4d4e-ae68-c41156092aa8/linked_in_profile"
+    link: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:b400f392-c6e1-491d-8867-43323ebb89c2"
   },
   {
     name: "Machine Learning Specialization",
